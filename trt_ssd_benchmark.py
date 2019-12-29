@@ -9,7 +9,7 @@ from utils.ssd import TrtSSD
 import time
 import numpy as np
 
-model = "TRT_ssd_mobilenet_v1_coco.bin"
+model = "ssd_mobilenet_v2_coco"
 filename = "./huskies.jpg"
 conf_th = 0.3
 INPUT_HW = (300, 300)
