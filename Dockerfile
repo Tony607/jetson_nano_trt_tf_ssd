@@ -9,6 +9,7 @@ COPY utils* ./utils/
 COPY packages/jetpack4.3/TRT_ssd_mobilenet_v2_coco.bin ./ssd/
 COPY  *.py ./
 COPY packages/jetpack4.3/libflattenconcat.so ./ssd/
+COPY *.jpg ./
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt update && apt install -y --fix-missing python3-pip python3-opencv
