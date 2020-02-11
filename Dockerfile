@@ -4,7 +4,6 @@ ENV TZ=Asia/Hong_Kong
 
 COPY packages/jetpack4.3/pycuda-2019.1.2-cp36-cp36m-linux_aarch64.whl ./
 COPY packages/jetpack4.3/tensorrt.tar.gz ./
-COPY ssd* ./ssd/
 COPY utils* ./utils/
 COPY packages/jetpack4.3/TRT_ssd_mobilenet_v2_coco.bin ./ssd/
 COPY  *.py ./
